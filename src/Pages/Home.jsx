@@ -6,7 +6,7 @@ const Home = () =>{
     <div className=''>
         <Navbar/>
         <div className='w-full mt-48 flex flex-col justify-center items-center'>
-            <h1 className='text-6xl text-gray-200'>Pagina Home</h1>
+            <h1 className='text-6xl text-gray-300'>Pagina Home</h1>
         </div>
     </div>
   );
