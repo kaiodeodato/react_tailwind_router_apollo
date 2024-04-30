@@ -1,7 +1,15 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
+import { useQuery } from '@apollo/client';
+import { POST_QUERY } from '../Queries';
 
 const Sobre = () =>{
+  const { data, loading } = useQuery(POST_QUERY);
+  console.log(data)
+
+  if(loading){
+      return <p>Loading ...</p>
+  }
   return (
     <div className=''>
         <Navbar/>

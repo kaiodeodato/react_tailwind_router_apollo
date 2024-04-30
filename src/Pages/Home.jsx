@@ -1,7 +1,17 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
+import { useQuery } from '@apollo/client';
+import { POST_QUERY_LIMIT } from '../Queries';
 
 const Home = () =>{
+  const { data, loading } = useQuery(POST_QUERY_LIMIT, {
+    variables: { limit: 5 }
+  });
+  console.log(data)
+
+  if(loading){
+      return <p>Loading ...</p>
+  }
   return (
     <div className=''>
         <Navbar/>
