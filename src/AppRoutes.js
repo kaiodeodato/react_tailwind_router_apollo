@@ -10,7 +10,7 @@ const AppRoutes = () => {
        <Router>
         <Routes>
             <Route element = { <Home/> }  path="/" exact></Route>
-            <Route element = { <Sobre/> }  path="/sobre"></Route>
+            <Route element = { <Sobre/> }  path="/sobre/:postId"></Route>
         </Routes>
        </Router>
    )
